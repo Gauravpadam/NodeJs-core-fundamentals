@@ -6,3 +6,12 @@ console.log(user)
 
 //  method returns system uptime in seconds
 console.log(`The system uptime is ${Math.ceil(os.uptime()/3600)} hours`);
+
+//  current OS info
+const currentOS = {
+    name: os.type(),
+    release: os.release(),
+    totalMem: os.totalmem(),
+    freeMem: os.freemem()
+}
+console.log(currentOS)
